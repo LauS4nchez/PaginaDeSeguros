@@ -1,0 +1,207 @@
+/* Reset de márgenes y fuentes */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background-color: #f3f8fd;
+    color: #970101;
+    line-height: 1.6;
+  }
+  
+  h1, h2, h3 {
+    color: #11468f;
+  }
+  
+  /* Header */
+  .header {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #11468f, #5c99d6);
+    color: white;
+  }
+  
+  .header h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .header p {
+    font-size: 1.2em;
+  }
+  
+  /* Imagen */
+  .image {
+    display: block;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+  }
+  
+  /* Secciones */
+  section {
+    margin: 30px auto;
+    max-width: 800px;
+    padding: 30px 25px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  section:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Títulos de sección */
+  .about-us h2, .vision-mission h2, .benefits h2, .cta h2 {
+    font-size: 1.8em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #11468f;
+  }
+  
+  /* Texto de sección */
+  .about-us p, .vision-mission p, .benefits ul, .cta p {
+    color: #555;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    line-height: 1.7;
+  }
+  
+  /* Visión y Misión */
+  .vision, .mission {
+    margin-bottom: 20px;
+  }
+  
+  .vision h3, .mission h3 {
+    color: #0e76a8;
+    font-size: 1.5em;
+    margin-bottom: 8px;
+  }
+  
+  /* Beneficios */
+  .benefits ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .benefits ul li {
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: #333;
+    padding-left: 30px;
+    position: relative;
+  }
+  
+  .benefits ul li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #0e76a8;
+    font-weight: bold;
+  }
+  
+  /* CTA (Llamada a la acción) */
+  .cta {
+    text-align: center;
+    background-color: #07abf7;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+  }
+  
+  .cta h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+  }
+  
+  .cta p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  .cta button {
+    padding: 12px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #0e76a8;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+  }
+  
+  .cta button:hover {
+    background-color: #084b8a;
+  }
+  
+  /* Botón de Login específico */
+  .cta .btn-login {
+    background-color: #28a745;
+  }
+  
+  .cta .btn-login:hover {
+    background-color: #218838;
+  }
+  
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #11468f;
+    color: white;
+    margin-top: 40px;
+  }
+  
+  .footer p {
+    font-size: 0.9em;
+  }
+  
+  /* Responsivo: Ajustes para pantallas pequeñas */
+  @media (max-width: 768px) {
+    .header h1 {
+      font-size: 2em;
+    }
+  
+    .header p, .cta p, .about-us p, .vision-mission p, .benefits ul {
+      font-size: 1em;
+    }
+  
+    /* Espaciado reducido en secciones */
+    section {
+      padding: 20px;
+      margin: 20px auto;
+    }
+  
+    .cta h2 {
+      font-size: 1.5em;
+    }
+  
+    /* Imagen responsiva */
+    .image {
+      width: 90%;
+      max-width: 300px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .header h1 {
+      font-size: 1.8em;
+    }
+  
+    /* Botones en stack (uno debajo del otro) */
+    .cta button {
+      display: block;
+      width: 100%;
+      max-width: 250px;
+      margin: 10px auto;
+    }
+  }
+  
